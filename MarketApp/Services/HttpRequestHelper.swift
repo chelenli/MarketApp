@@ -36,7 +36,6 @@ class HttpRequestHelper {
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         case .none: break
         }
-
         
         // .ephemeral prevent JSON from caching (They'll store in Ram and nothing on Disk)
         let config = URLSessionConfiguration.ephemeral
