@@ -47,8 +47,6 @@ class DetailViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .blue
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 35).isActive = true
         button.addTarget(self, action: #selector(addCartClicked), for: .touchUpInside)
     
         return button
@@ -89,7 +87,6 @@ class DetailViewController: UIViewController {
             descriptionText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             descriptionText.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             descriptionText.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            descriptionText.heightAnchor.constraint(equalToConstant: 150),
             
             button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
